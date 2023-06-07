@@ -14,7 +14,14 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Você está logado!') }}
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Fornecedores</h5>
+                          <p class="card-text">Adicione e edite os Fornecedores.</p>
+                          <a href="#" class="btn btn-primary">Clique Aqui</a>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>

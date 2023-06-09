@@ -3,7 +3,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="tituloComissaoAfiliados">Cadastrar Novo Processo</h4>
+        <h4 class="modal-title" id="tituloComissaoAfiliados">Cadastrar Fornecedor</h4>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <form enctype="multipart/form-data" action="" method="post">
@@ -13,159 +13,69 @@
           <input type="hidden" name="idProcesso" id="idProcesso">
 
 
-          <div class="col-md-12">
-            <div class="col-md-12 float-left padding-larg">
+            <div class="col-md-6 float-left padding-larg">
               <div class="form-group">
-                <label for="">Andamento Processual</label>
-                <select class="form-control" id="andamentoProcessual" name="andamentoProcessual">
-                  <option value="1">Ativo</option>
-                  <option value="2">Extinto</option>
-                  <option value="3">Vencido</option>
-                  <option value="4">Perda</option>
-                </select>
-
-              </div>
-            </div>
-
-            <div class="col-md-4 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Data Recebida Citação</label>
-                <input type="date" class="form-control" id="dataRecebidaCitacao"
+                <label for="">Nome</label>
+                <input type="text" class="form-control" id="dataRecebidaCitacao"
                   name="dataRecebidaCitacao" autocomplete="off">
               </div>
             </div>
-            <div class="col-md-4 float-left padding-larg">
+            <div class="col-md-6 float-left padding-larg">
               <div class="form-group">
-                <label for="">Data Propositura Ação</label>
-                <input type="date" class="form-control" id="dataPropositura"
-                  name="dataPropositura" autocomplete="off">
+                <label for="">Documento</label>
+                <input type="text" class="form-control" id="documento"
+                  name="documento" autocomplete="off">
               </div>
             </div>
             <div class="col-md-4 float-left padding-larg">
               <div class="form-group">
-                <label for="">Tipo de Ação</label>
+                <label for="">Email</label>
                 <input type="text" class="form-control" id="tipoAcao"
                   name="tipoAcao" autocomplete="off">
               </div>
             </div>
             <div class="col-md-4 float-left padding-larg">
               <div class="form-group">
-                <label for="">Autor</label>
-                <input type="text" class="form-control" id="autor"
-                  name="autor" autocomplete="off">
+                <label for="">Telefone</label>
+                <input type="text" class="form-control" id="telefone"
+                  name="telefone" autocomplete="off">
               </div>
             </div>
             <div class="col-md-4 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Id Pedido</label>
-                <input type="text" class="form-control" id="id_pedido"
-                  name="id_pedido" autocomplete="off">
+                <div class="form-group">
+                  <label for="">Cep</label>
+                  <input type="text" class="form-control" id="cep"
+                    name="cep" autocomplete="off">
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Data Audiência</label>
-                <input type="date" class="form-control" id="dataAudiencia"
-                  name="dataAudiencia" autocomplete="off">
+              <div class="col-md-4 float-left padding-larg">
+                <div class="form-group">
+                  <label for="">cidade</label>
+                  <input type="text" class="form-control" id="cidade"
+                    name="cidade" autocomplete="off">
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Número de Processo</label>
-                <input type="text" class="form-control" id="numeroProcesso"
-                  name="numeroProcesso" autocomplete="off">
+              <div class="col-md-4 float-left padding-larg">
+                <div class="form-group">
+                  <label for="">estado</label>
+                  <input type="text" class="form-control" id="estado"
+                    name="estado" autocomplete="off">
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Valor Causa</label>
-                <input type="text" class="form-control" id="valorCausa"
-                  name="valorCausa" autocomplete="off">
+              <div class="col-md-4 float-left padding-larg">
+                <div class="form-group">
+                  <label for="">pais</label>
+                  <input type="text" class="form-control" id="pais"
+                    name="pais" autocomplete="off">
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Vara</label>
-                <input type="text" class="form-control" id="vara"
-                  name="vara" autocomplete="off">
+              <div class="col-md-12 float-left padding-larg">
+                <div class="form-group">
+                  <label for="">Dados Bancários</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
               </div>
-            </div>
-            <div class="col-md-3 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Foro</label>
-                <input type="text" class="form-control" id="foro"
-                  name="foro" autocomplete="off">
-              </div>
-            </div>
-            <div class="col-md-3 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Data Envio para ADV</label>
-                <input type="date" class="form-control" id="dataEnvioAdv"
-                  name="dataEnvioAdv" autocomplete="off">
-              </div>
-            </div>
-            <div class="col-md-3 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Id Produto</label>
-                <input type="text" class="form-control" id="id_produto"
-                  name="id_produto" autocomplete="off">
-              </div>
-            </div>
-            <div class="col-md-3 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Valor Venda</label>
-                <input type="text" class="form-control" id="valorVenda"
-                  name="valorVenda" autocomplete="off">
-              </div>
-            </div>
-            <div class="col-md-4 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Valor Danos Morais</label>
-                <input type="text" class="form-control" id="valorDanosMorais"
-                  name="valorDanosMorais" autocomplete="off">
-              </div>
-            </div>
-            <div class="col-md-4 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Valor Honorários</label>
-                <input type="text" class="form-control" id="valorHonorarios"
-                  name="valorHonorarios" autocomplete="off">
-              </div>
-            </div>
-            <div class="col-md-4 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Valor Custas</label>
-                <input type="text" class="form-control" id="valorCustas"
-                  name="valorCustas" autocomplete="off">
-              </div>
-            </div>
-          
-            <div class="col-md-12 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Reclamação</label>
-                <textarea class="form-control" name="reclamacoes" id="reclamacoes" style="min-height: 100px;"></textarea>
-              </div>
-            </div>
-            <div class="col-md-12 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Solução Sugerida</label>
-                <textarea class="form-control" name="solucao" id="solucao" style="min-height: 100px;"></textarea>
-              </div>
-            </div>
-            <div class="col-md-6 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Ultima Decisão</label>
-                <input type="text" class="form-control" id="ultimaDecisao"
-                  name="ultimaDecisao" autocomplete="off">
-              </div>
-            </div>
-            <div class="col-md-6 float-left padding-larg">
-              <div class="form-group">
-                <label for="">Anexo</label>
-                <input type="file" class="form-control" id="anexoProcesso"
-                  name="anexoProcesso[]" multiple autocomplete="off">
-              </div>
-            </div>
+
             <div class="modal-footer">
               <input type="submit" id="cadastrarNegociacaofiliadosForm" class="btn btn-primary" value="Enviar">
             </div>

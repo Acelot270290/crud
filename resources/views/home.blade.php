@@ -19,7 +19,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Fornecedores</h5>
                           <p class="card-text">Adicione e edite os Fornecedores.</p>
-                          <a href="{{route('fornecedores')}}" class="btn btn-primary">Clique Aqui</a>
+                          <a href="{{route('fornecedor')}}" class="btn btn-primary">Clique Aqui</a>
                         </div>
                       </div>
                 </div>
